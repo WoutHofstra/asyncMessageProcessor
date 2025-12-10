@@ -4,6 +4,9 @@ using Config;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Azure.Messaging.ServiceBus;
+using Routing;
+using Models;
+using Handlers;
 
 Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
@@ -15,6 +18,10 @@ Host.CreateDefaultBuilder(args)
 
         services.AddSingleton<ServiceBusClient>(_ =>
             new ServiceBusClient(sbSettings.ConnectionString));
+
+        services.AddSingleton<MessageRouter>();
+
+        services.AddScoped<IMessageHandler<UserWelcomeMessage>, UserWelcomeMessageHandler>();
 
         services.AddHostedService<Worker>();
     })
