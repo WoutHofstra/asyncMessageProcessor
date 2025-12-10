@@ -25,7 +25,8 @@ namespace Messaging
                 MaxConcurrentCalls = 1
             });
 
-            // TODO: Add handlers to this processor when I've made them
+            _processor.ProcessMessageAsync += HandleMessageAsync;
+            _processor.ProcessErrorAsync += HandleErrorAsync;
 
            await _processor.StartProcessingAsync(cancellationToken);
         }
@@ -37,7 +38,8 @@ namespace Messaging
 
             await _processor.StopProcessingAsync();
 
-            // TODO: Add logic that removes handlers from the processor when i get handlers
+            _processor.ProcessMessageAsync -= HandleMessageAsync;
+            _processor.ProcessErrorAsync -= HandleErrorAsync;
 
             await _processor.DisposeAsync();
         }
