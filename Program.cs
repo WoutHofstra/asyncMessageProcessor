@@ -7,6 +7,7 @@ using Azure.Messaging.ServiceBus;
 using Routing;
 using Models;
 using Handlers;
+using Messaging;
 
 Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
@@ -20,6 +21,8 @@ Host.CreateDefaultBuilder(args)
             new ServiceBusClient(sbSettings.ConnectionString));
 
         services.AddSingleton<MessageRouter>();
+        
+        services.AddSingleton<MessageProcessor>();
 
         services.AddScoped<IMessageHandler<UserWelcomeMessage>, UserWelcomeMessageHandler>();
 

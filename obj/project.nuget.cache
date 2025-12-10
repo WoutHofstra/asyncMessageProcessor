@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "NFwmJBStI+DVJsXvnoMr4+8mbhXGLxz/8ThqcvNP2/0rn+smvwLGzwS94C4tpzwuULAhI7k6SHI1aQC8oo4aNA==",
+  "dgSpecHash": "42j3W3k3imrkWrmosCAGzUcVmveg1Ycg5vhVsZR2n6n58CMEk+DQtgb3kQG9DWls0aRQMQtFJi5z0bs/PyKDxQ==",
   "success": true,
   "projectFilePath": "/home/hofst/asyncMessageProcessor/asyncMessageProcessor.csproj",
   "expectedPackageFiles": [
+    "/home/hofst/.nuget/packages/azure.core/1.46.2/azure.core.1.46.2.nupkg.sha512",
+    "/home/hofst/.nuget/packages/azure.core.amqp/1.3.1/azure.core.amqp.1.3.1.nupkg.sha512",
+    "/home/hofst/.nuget/packages/azure.messaging.servicebus/7.20.1/azure.messaging.servicebus.7.20.1.nupkg.sha512",
+    "/home/hofst/.nuget/packages/microsoft.azure.amqp/2.7.0/microsoft.azure.amqp.2.7.0.nupkg.sha512",
+    "/home/hofst/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.configuration.binder/8.0.2/microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
@@ -22,7 +27,7 @@
     "/home/hofst/.nuget/packages/microsoft.extensions.hosting/8.0.1/microsoft.extensions.hosting.8.0.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.1/microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
-    "/home/hofst/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/home/hofst/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.3/microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.logging.configuration/8.0.1/microsoft.extensions.logging.configuration.8.0.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.logging.console/8.0.1/microsoft.extensions.logging.console.8.0.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.logging.debug/8.0.1/microsoft.extensions.logging.debug.8.0.1.nupkg.sha512",
@@ -31,7 +36,10 @@
     "/home/hofst/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/hofst/.nuget/packages/system.diagnostics.eventlog/8.0.1/system.diagnostics.eventlog.8.0.1.nupkg.sha512"
+    "/home/hofst/.nuget/packages/system.clientmodel/1.4.2/system.clientmodel.1.4.2.nupkg.sha512",
+    "/home/hofst/.nuget/packages/system.diagnostics.eventlog/8.0.1/system.diagnostics.eventlog.8.0.1.nupkg.sha512",
+    "/home/hofst/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/hofst/.nuget/packages/system.memory.data/6.0.1/system.memory.data.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }
