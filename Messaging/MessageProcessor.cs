@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using Azure.Messaging.ServiceBus;
 using Config;
+using Routing;
 
 namespace Messaging
 {
@@ -9,12 +10,14 @@ namespace Messaging
     {
         private readonly ServiceBusClient _client;
         private readonly ServiceBusSettings _settings;
+        private readonly IMessageRouter _router;
         private ServiceBusProcessor? _processor;
 
-        public MessageProcessor(ServiceBusClient client, ServiceBusSettings settings)
+        public MessageProcessor(ServiceBusClient client, ServiceBusSettings settings, IMessageRouter router)
         {
             _client = client;
             _settings = settings;
+            _router = router;
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -49,7 +52,7 @@ namespace Messaging
             string body = args.Message.Body.ToString();
 
             // TODO: route this message to a message router! For now we will log the message
-            Console.WriteLine($"This is the message: {body}");
+            await _router.RouteAsync(body, args.CancellationToken);
 
             await args.CompleteMessageAsync(args.Message);
         }
