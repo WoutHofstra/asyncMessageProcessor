@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "42j3W3k3imrkWrmosCAGzUcVmveg1Ycg5vhVsZR2n6n58CMEk+DQtgb3kQG9DWls0aRQMQtFJi5z0bs/PyKDxQ==",
+  "dgSpecHash": "ztyw91QgEeorYCOtlYP5EhSam1M0o6hGZ4YDktvhwwgK/rzBm3DG1hFOju7ZZF7zkhhIn8ZjFKF4xhG3LbqvSw==",
   "success": true,
   "projectFilePath": "/home/hofst/asyncMessageProcessor/asyncMessageProcessor.csproj",
   "expectedPackageFiles": [
-    "/home/hofst/.nuget/packages/azure.core/1.46.2/azure.core.1.46.2.nupkg.sha512",
+    "/home/hofst/.nuget/packages/azure.communication.email/1.1.0/azure.communication.email.1.1.0.nupkg.sha512",
+    "/home/hofst/.nuget/packages/azure.core/1.49.0/azure.core.1.49.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/azure.core.amqp/1.3.1/azure.core.amqp.1.3.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/azure.messaging.servicebus/7.20.1/azure.messaging.servicebus.7.20.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.azure.amqp/2.7.0/microsoft.azure.amqp.2.7.0.nupkg.sha512",
@@ -36,10 +37,10 @@
     "/home/hofst/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/hofst/.nuget/packages/system.clientmodel/1.4.2/system.clientmodel.1.4.2.nupkg.sha512",
+    "/home/hofst/.nuget/packages/system.clientmodel/1.7.0/system.clientmodel.1.7.0.nupkg.sha512",
     "/home/hofst/.nuget/packages/system.diagnostics.eventlog/8.0.1/system.diagnostics.eventlog.8.0.1.nupkg.sha512",
     "/home/hofst/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
-    "/home/hofst/.nuget/packages/system.memory.data/6.0.1/system.memory.data.6.0.1.nupkg.sha512"
+    "/home/hofst/.nuget/packages/system.memory.data/8.0.1/system.memory.data.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

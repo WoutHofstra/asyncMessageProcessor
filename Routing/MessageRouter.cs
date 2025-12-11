@@ -4,7 +4,7 @@ using Models;
 
 namespace Routing
 {
-    public class MessageRouter
+    public class MessageRouter : IMessageRouter
     {
         private readonly IServiceProvider _serviceProvider;
 
@@ -45,7 +45,7 @@ namespace Routing
             if (message == null)
                 throw new InvalidOperationException($"Failed to deserialize json body: {json}");
 
-            var handler = _serviceProvider.GetRequiredService<THandler>();
+            var handler = (IMessageHandler<TMessage>)_serviceProvider.GetRequiredService(typeof(IMessageHandler<TMessage>));
 
             await handler.HandleAsync(message, cancellationToken);
         }

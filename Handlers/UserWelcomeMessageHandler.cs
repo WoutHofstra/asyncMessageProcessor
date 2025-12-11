@@ -2,17 +2,34 @@ using System;
 using System.Threading.Tasks;
 using System.Threading;
 using Models;
+using Services;
 
 namespace Handlers
 {
     public class UserWelcomeMessageHandler : IMessageHandler<UserWelcomeMessage>
     {
-        public Task HandleAsync(UserWelcomeMessage message, CancellationToken token)
+        private readonly IEmailSender _emailSender;
+
+        public UserWelcomeMessageHandler(IEmailSender emailSender)
         {
-            // In a real world setting, this would send a real email, or call a function that does so
+            _emailSender = emailSender;
+        }
+        public async Task HandleAsync(UserWelcomeMessage message, CancellationToken token)
+        {
+            if (message == null) throw new ArgumentNullException(nameof(message));
+
+            string subject = "Welcome to our platform!";
+            string htmlBody = $"<p>Hi {message.Username}, welcome to our platform! We're excited to have you.</p>";
+            string plainTextBody = $"Hi {message.Username}, welcome to our platform!";
+
+            await _emailSender.SendEmailAsync(
+                message.Email,
+                subject,
+                htmlBody,
+                plainTextBody
+            );
             
             Console.WriteLine($"Sending welcome email to {message.Username}");
-            return Task.CompletedTask;
         }
     }
 }

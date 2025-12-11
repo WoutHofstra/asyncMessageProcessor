@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("asyncMessageProcessor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07b06d55b58935c260d82618f5ad6ecc85d6da5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7a587793961e65d4b23394564ffa818190877ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("asyncMessageProcessor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("asyncMessageProcessor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
