@@ -51,7 +51,6 @@ namespace Messaging
         {
             string body = args.Message.Body.ToString();
 
-            // TODO: route this message to a message router! For now we will log the message
             await _router.RouteAsync(body, args.CancellationToken);
 
             await args.CompleteMessageAsync(args.Message);

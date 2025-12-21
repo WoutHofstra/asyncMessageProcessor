@@ -54,3 +54,4 @@
 /home/hofst/asyncMessageProcessor/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/hofst/asyncMessageProcessor/bin/Debug/net8.0/System.ClientModel.dll
 /home/hofst/asyncMessageProcessor/bin/Debug/net8.0/System.Memory.Data.dll
+/home/hofst/asyncMessageProcessor/bin/Debug/net8.0/Azure.Communication.Email.dll

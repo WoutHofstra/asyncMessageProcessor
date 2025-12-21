@@ -31,6 +31,10 @@ namespace Routing
                 case "UserWelcomeMessage":
                     await HandleAsync<UserWelcomeMessage, UserWelcomeMessageHandler>(json, cancellationToken);
                     break;
+                    
+                case "ForgotPasswordMessage":
+                    await HandleAsync<ForgotPasswordMessage, ForgotPasswordMessageHandler>(json, cancellationToken);
+                    break;
 
                 default:
                     throw new NotSupportedException($"Task type not supported: {taskType}");

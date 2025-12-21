@@ -26,7 +26,7 @@ Host.CreateDefaultBuilder(args)
         var emailFromAddress = context.Configuration["Email:FromAddress"];
 
         services.AddSingleton<IEmailSender>(sp =>
-            new EmailSender(emailConnectionString = "", emailFromAddress = ""));
+            new EmailSender(emailConnectionString, emailFromAddress));
 
         services.AddSingleton<IMessageRouter, MessageRouter>();
         services.AddSingleton<MessageRouter>();
